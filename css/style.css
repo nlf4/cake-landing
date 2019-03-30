@@ -71,3 +71,21 @@ header nav li {
 section div {
     background-image: url('./img/cake3.jpg');
 }
+
+.hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;z-index: -1;
+    background-color: rgb(185, 206, 211);
+
+}
