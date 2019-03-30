@@ -1,0 +1,73 @@
+body {
+    background-color: beige;
+    
+}
+html {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    font-size: 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    opacity: 0.75;
+}
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(12, 107, 248);
+}
+
+a:hover {
+    opacity: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px 0;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+
+}
+
+header h2 {
+    font-family: 'Dosis', sans-serif;
+}
+
+header nav {
+    display: flex;
+    margin-right: -15px;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+section div {
+    background-image: url('./img/cake3.jpg');
+}
