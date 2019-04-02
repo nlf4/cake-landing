@@ -1,7 +1,4 @@
-body {
-    background-color: beige;
-    
-}
+
 html {
     font-family: 'Lato', sans-serif;
     color: #555;
@@ -14,19 +11,22 @@ html {
     box-sizing: border-box;
 }
 
+ul,
 nav {
     list-style: none;
 }
 a {
     text-decoration: none;
     opacity: 0.75;
+    color: #fff;
 }
 a.btn {
     border-radius: 4px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    color: rgb(12, 107, 248);
+    background-color: rgb(12, 107, 248);
+    opacity: 1;
 }
 
 a:hover {
@@ -40,13 +40,46 @@ section {
     padding: 100px 80px;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: blue;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+section h3.title {
+    text-transform: capitalize;
+    font: bold 32px 'Dosis', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 header {
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px 0;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
+    color: #fff;
 }
 @keyframes fadein {
     100% {
@@ -68,14 +101,11 @@ header nav li {
     margin: 0 15px;
 }
 
-section div {
-    background-image: url('./img/cake3.jpg');
-}
 
 .hero {
     position: relative;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     min-height: 100vh;
 }
 
@@ -85,7 +115,49 @@ section div {
     left: 0;
     height: 100%;
     width: 100%;
-    background-size: cover;z-index: -1;
+    background-size: cover;
+    z-index: -1;
     background-color: rgb(185, 206, 211);
 
+}
+.hero h1 {
+    font: bold 60px 'Dosis', sans-serif;
+    margin-bottom: 15px;
+}
+.hero h4 {
+    font: normal 28px 'Dosis', sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+}
+
+.hero-content {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+/* Cakes grid */
+
+.cakes .grid {
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.cakes .grid li.small {
+    flex-basis: 30%;
+}
+.cakes .grid li.large {
+    flex-basis: 70%;
 }
