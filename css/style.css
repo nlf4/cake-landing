@@ -1,7 +1,7 @@
 
 html {
     font-family: 'Lato', sans-serif;
-    color: #555;
+    color: rgb(155, 153, 153);
     font-size: 28px;
 }
 
@@ -18,7 +18,7 @@ nav {
 a {
     text-decoration: none;
     opacity: 0.75;
-    color: rgba(255, 255, 255, 0.849);
+    color: rgb(243, 235, 235);
 }
 a.btn {
     border-radius: 4px;
@@ -31,8 +31,9 @@ a.btn {
 
 a:hover {
     opacity: 1;
-    color: #fff;
+    color: rgb(248, 244, 244);
 }
+
 
 section {
     display: flex;
@@ -91,7 +92,7 @@ header {
     padding: 30px 100px 0;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
-    color: #fff;
+    
 }
 @keyframes fadein {
     100% {
@@ -247,7 +248,7 @@ header nav li {
 
  @media (max-width: 800px) {
     .testimonials .quote {
-        font-size: 18px;
+        font-size: 19px;
         margin: 15px 0;
     }
     .testimonials .author {
