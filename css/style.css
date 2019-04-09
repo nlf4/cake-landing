@@ -248,7 +248,7 @@ header nav li {
 
  @media (max-width: 800px) {
     .testimonials .quote {
-        font-size: 19px;
+        font-size: 18px;
         margin: 15px 0;
     }
     .testimonials .author {
